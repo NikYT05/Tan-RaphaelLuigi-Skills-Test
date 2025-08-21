@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    grid-template-rows: auto;
+    gap: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3vw;
+}
+
+.ingredients, .steps {
+    margin-top: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    border: 2px solid gold;
+    border-radius: 15%;
+}
+
+.ingredients h3, .steps h3, li {
+    margin-left: 1vw;
+}
+
+a:hover {
+    background-color: white;
+    cursor: pointer;
+}

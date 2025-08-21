@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="feedback.css">
+    </head>
+    <body>
+        <header>
+            <img src="Images/logo.webp" alt="logo">
+            <p>
+                La Kusina!
+            </p>
+        </header>
+        <div>
+            <a href="homepage.html">&lt; Back to Homepage</a>
+        </div>
+        <form>
+            <label for="name">Name: </label>
+            <input id="name" type="text" name="name">
+
+            <label for="name">Email: </label>
+            <input id="email" type="email" name="name">
+
+            <label for="name">Subject: </label>
+            <input id="subject" type="text" name="name">
+
+            <label for="name">Message: </label>
+            <input id="feedback" type="text" name="name">
+
+            <p id="validator"></p>
+            <input type="button" onclick="MySubmit()" value="Submit">
+        </form>
+
+        <script>
+
+            function MySubmit() { 
+
+                let email = document.getElementById("email").value;
+                let feedback = document.getElementById("feedback").value;
+                let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+                let message = document.getElementById("validator")
+
+                if (regex.test(email)) {
+                    
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("subject").value = "";
+                    document.getElementById("feedback").value = "";
+                    message.textContent = "Success"
+
+                } else {
+                    message.textContent = "Kindly check if the email is valid/message is not blank."
+                }
+            }
+        </script>
+    </body>
+</html>

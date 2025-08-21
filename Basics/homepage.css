@@ -1,0 +1,117 @@
+body {
+    background-image: url(Images/homepageBG.jpg);
+    color: white;
+    margin: 0;
+    display: grid;
+}
+
+header img{
+    height:5vw;
+    width: 5vw;
+}
+
+header {
+    position: sticky;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Comic Sans MS", cursive;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+h1 {
+    font-family: "Comic Sans MS", cursive;
+}
+
+.intro {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 5vw;
+    border: 2px solid white;
+}
+
+.intro img {
+    border-radius: 35%;
+    border: 10px solid grey;
+}
+
+.description {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid grey;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+ul {
+    background-color: grey;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1.5vw;
+    border: 2px solid white;
+    border-radius: 20%;
+}
+
+li {
+    font-family: 'verdana', sans-serif;
+    border-right: 2px solid white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+li:last-of-type {
+    border-right: none;
+}
+
+li:hover {
+    background-color: rgb(203, 203, 203);
+    cursor: pointer;
+}
+
+.feedback {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2vw;;
+}
