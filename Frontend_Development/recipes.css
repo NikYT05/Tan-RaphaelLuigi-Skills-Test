@@ -1,0 +1,70 @@
+body {
+    background-image: url(Images/homepageBG.jpg);
+    color: white;
+}
+
+header {
+    margin-top: 1.5vw;
+    top: 0;
+    left: 0;
+}
+
+header a {
+    background-color: black;
+    border: 2px solid gold;
+    border-radius: 15%;
+    margin-top: 1vw;
+    padding: 0.5vw;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    grid-template-rows: auto;
+    gap: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3vw;
+}
+
+.description div {
+    background-color: rgb(0, 0, 0, 0.8);
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    border: 2px solid gold;
+    border-radius: 15%;
+}
+
+.ingredients, .steps {
+    background-color: rgb(0, 0, 0, 0.8);
+    margin-top: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    border: 2px solid gold;
+    border-radius: 15%;
+}
+
+.ingredients h3, .steps h3, li {
+    margin-left: 1vw;
+}
+
+a:hover {
+    background-color: white;
+    cursor: pointer;
+}

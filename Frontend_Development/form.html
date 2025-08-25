@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="feedback.css">
+    </head>
+    <body>
+        <header>
+            <a href="homepage.html">&lt; Back to Homepage</a>
+        </header>
+        
+        <div class="form">
+        <form>
+            <div class="space"></div>
+            <div class="container">
+                <div>
+                    <h1>Feedback Form</h1>
+                </div>
+
+                <div>
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" name="name">
+                </div>
+
+                <div>
+                    <label for="name">Email: </label>
+                    <input id="email" type="email" name="name">
+                </div>
+
+                <div>
+                    <label for="name">Subject: </label>
+                    <input id="subject" type="text" name="name">
+                </div>
+
+                <div class="feedback">
+                    <label for="name">Message: </label>
+                    <input id="feedback" type="text" maxlength="255" name="name">
+                    <p id="charCount">0 / 255</p>
+                </div>
+
+                <div class="valid">
+                    <p id="validator"></p>
+                    <input type="button" onclick="MySubmit()" value="Submit">
+                </div>
+            </div>
+            <div class="space"></div>
+        </form>
+
+        <script>
+
+            function MySubmit() { 
+
+                let email = document.getElementById("email").value;
+                let feedback = document.getElementById("feedback").value;
+                let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+                let message = document.getElementById("validator")
+
+                if (regex.test(email)) {
+                    
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("subject").value = "";
+                    document.getElementById("feedback").value = "";
+                    message.textContent = "Success"
+
+                } else {
+                    message.textContent = "Kindly check if the email is valid/message is not blank."
+                }
+            }
+
+            const charCount = document.getElementById("charCount");
+            const input = document.getElementById("feedback");
+
+            input.addEventListener("input", ()=>{
+                charCount.textContent = `${input.value.length} / 255`;
+            });
+
+        </script>
+    </body>
+</html>
